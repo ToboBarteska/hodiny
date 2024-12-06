@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hodiny podle zemí</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="clock">
+    <h1>Čas podle zemí</h1>
+    <select id="timezone" onchange="updateClock()">
+      <option value="Europe/Prague">Praha</option>
+      <option value="America/New_York">New York</option>
+      <option value="Asia/Tokyo">Tokio</option>
+      <option value="Australia/Sydney">Sydney</option>
+      <option value="Africa/Cairo">Káhira</option>
+    </select>
+    <div id="time"></div>
+  </div>
+
+  <div id="greeting" style="font-size: 1.5rem; margin-bottom: 20px; position: absolute;"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
